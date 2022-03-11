@@ -1,0 +1,141 @@
+/*   Ana komutlar   */
+
+.ana-font {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.logo-font {
+    font-family: 'Righteous', cursive;
+}
+
+html {
+    font-size: 20px;
+}
+
+/*   Sayfa Tasarımı Kodları   */
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    position: absolute;
+    z-index: -100;
+    margin-top: -50px;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.8rem;
+}
+
+.logo {
+    width: 400px;
+    height: 40px;
+    font-size: 1.8rem;
+    transition: 700ms;
+}
+
+.hamburger-container {
+    width: 35px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.hamburger-item {
+    display: block;
+    width: 23px;
+    height: 2.5px;
+    background: #fff;
+    transition: 500ms;
+}
+
+.hamburger-container:hover .hamburger-item:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-container:hover .hamburger-item:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-container:hover .hamburger-item:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg)
+}
+
+
+/*   Slider İşlemleri   */
+
+.slider-container {
+    width: 100%;
+    height: 325px;
+    margin-top: 3rem;
+}
+
+.slider-metin-container {
+    width: 60%;
+    height: auto;
+    border: 3px solid white;
+    padding: 20px 30px;
+    background: rgb(0, 0, 0, .6);
+    position: absolute;
+    opacity: 0;
+    transition: 700ms;
+}
+
+.slider-metin-container:nth-child(1) {
+    opacity: 1;
+    margin-left: 2.8rem;
+}
+
+.slider-metin-container h2 {
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+    transition: 700ms;
+}
+
+.slider-metin-container p {
+    font-size: 1.5rem;
+}
+
+.slider-navigation {
+    width: 30px;
+    height: 100%;
+    float: right;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.slider-navigation span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #999;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    transition: 300ms;
+}
+
+.slider-navigation span:nth-child(1) {
+    width: 35px;
+    background: #eee;
+}

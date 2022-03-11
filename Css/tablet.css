@@ -1,0 +1,12 @@
+html {
+    font-size: 18px;
+}
+
+.slider-container {
+    margin-top: 2rem;
+}
+
+.slider-navigation span{
+    width: 5px;
+    height: 5px;
+}
